@@ -1,0 +1,6 @@
+  <swiper  bindchange="schange" circular="true">
+  <text>long tap to upload img</text>
+      <swiper-item wx:for="{{candidates}}" wx:key="unique">
+        <image  mode="aspectFit" src="{{item.fileID}}" bindtap="tap" bindlongpress="long"/>
+      </swiper-item>
+  </swiper> 
